@@ -6,7 +6,7 @@ import {
   publishPackage,
 } from './package.js'
 import { SemVerLevel } from './semver.js'
-import { exit, assert, logging, waitTask, clearLastLine } from './utils.js'
+import { exit, assert, logging, waitTask } from './utils.js'
 
 const workspaceRoot = getWorkspaceRoot()
 assert(workspaceRoot !== null, '此工具只能在 pnpm workspace 内运行')
