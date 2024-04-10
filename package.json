@@ -1,0 +1,35 @@
+{
+  "name": "pnpm-workspace-publisher",
+  "version": "1.0.0",
+  "description": "快捷发布 pnpm workspace 下的多个 npm 包",
+  "homepage": "https://github.com/anjianshi/pnpm-workspace-publisher/",
+  "bugs": {
+    "url": "https://github.com/anjianshi/pnpm-workspace-publisher/issues",
+    "email": "anjianshi@gmail.com"
+  },
+  "license": "MIT",
+  "author": "anjianshi <anjianshi@gmail.com>",
+  "repository": "github:anjianshi/pnpm-workspace-publisher",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "rm -rf dist && tsc",
+    "watch": "rm -rf dist && tsc --watch",
+    "start": "node dist/cli.js"
+  },
+  "type": "module",
+  "bin": {
+    "ws-publish": "./dist/cli.js"
+  },
+  "devDependencies": {
+    "@anjianshi/presets-eslint-node": "^3.0.0",
+    "@anjianshi/presets-prettier": "^3.0.0",
+    "@anjianshi/presets-typescript": "^3.0.0",
+    "@types/node": "^20.12.4",
+    "typescript": "^5.4.3"
+  },
+  "prettier": "@anjianshi/presets-prettier/prettierrc"
+}
