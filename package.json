@@ -1,6 +1,6 @@
 {
   "name": "pnpm-workspace-publisher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "快捷发布 pnpm workspace 下的多个 npm 包",
   "homepage": "https://github.com/anjianshi/pnpm-workspace-publisher/",
   "bugs": {
@@ -25,7 +25,7 @@
     "ws-publish": "./dist/cli.js"
   },
   "devDependencies": {
-    "@anjianshi/presets-eslint-node": "^3.0.0",
+    "@anjianshi/presets-eslint-node": "^4.0.1",
     "@anjianshi/presets-prettier": "^3.0.0",
     "@anjianshi/presets-typescript": "^3.0.0",
     "@types/node": "^20.12.4",
