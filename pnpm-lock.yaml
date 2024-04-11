@@ -6,14 +6,14 @@ settings:
 
 devDependencies:
   '@anjianshi/presets-eslint-node':
-    specifier: ^3.0.0
-    version: 3.0.0(eslint-plugin-import@2.29.1)(eslint@8.57.0)(typescript@5.4.3)
+    specifier: ^4.0.3
+    version: 4.0.3(eslint-plugin-import@2.29.1)(eslint@8.57.0)(typescript@5.4.3)
   '@anjianshi/presets-prettier':
     specifier: ^3.0.0
     version: 3.0.0
   '@anjianshi/presets-typescript':
-    specifier: ^3.0.0
-    version: 3.0.0(typescript@5.4.3)
+    specifier: ^3.1.3
+    version: 3.1.3(typescript@5.4.3)
   '@types/node':
     specifier: ^20.12.4
     version: 20.12.4
@@ -28,8 +28,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /@anjianshi/presets-eslint-base@3.0.0(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-typescript@3.6.1):
-    resolution: {integrity: sha512-KJPiTVE+CHXxoaOI2EEZytTKJ4KAgz0kNLUXqCFF3u6YbYTSt8N6IkYioYMoZ8s1dtIofOPBdJb30KROFo22DQ==}
+  /@anjianshi/presets-eslint-base@4.0.1(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-typescript@3.6.1):
+    resolution: {integrity: sha512-fEzTpYduh1tpr3fbSEdZ7K3N7LRbNJd4KV4N9JYNduaZtCSkziYYdW/xnMMReaWwTCVggQ5m/5Gzx11zH4eLbw==}
     dependencies:
       eslint: 8.57.0
       eslint-config-prettier: 9.1.0(eslint@8.57.0)
@@ -41,10 +41,10 @@ packages:
       - supports-color
     dev: true
 
-  /@anjianshi/presets-eslint-node@3.0.0(eslint-plugin-import@2.29.1)(eslint@8.57.0)(typescript@5.4.3):
-    resolution: {integrity: sha512-EbL6rh2JX+r2Tet6zlAEJU7NFDeFAOaJ03FiLxrp0ybT3jYMUeHkLd9Glet8TLFQmGiE80I0ONj31OEX6MO7ag==}
+  /@anjianshi/presets-eslint-node@4.0.3(eslint-plugin-import@2.29.1)(eslint@8.57.0)(typescript@5.4.3):
+    resolution: {integrity: sha512-jhL8Tf4pnCT/IZYyDKdIP5kLUFfEj7gJd5zIPscMb//2fJCTLn4Y/UVWPeRugbQ2PZS0/72i5vGNFaw4iJae2w==}
     dependencies:
-      '@anjianshi/presets-eslint-typescript': 3.0.0(eslint-plugin-import@2.29.1)(eslint@8.57.0)(typescript@5.4.3)
+      '@anjianshi/presets-eslint-typescript': 4.0.3(eslint-plugin-import@2.29.1)(eslint@8.57.0)(typescript@5.4.3)
     transitivePeerDependencies:
       - eslint
       - eslint-import-resolver-node
@@ -54,10 +54,10 @@ packages:
       - typescript
     dev: true
 
-  /@anjianshi/presets-eslint-typescript@3.0.0(eslint-plugin-import@2.29.1)(eslint@8.57.0)(typescript@5.4.3):
-    resolution: {integrity: sha512-zsXV1gMQd3YfLimpZyNVI9e5gd2CttJ7Io9qVNrpBBHr2bMO5C9uhKZn9x23iu5YRMiQPJmUng781y7v/22xMA==}
+  /@anjianshi/presets-eslint-typescript@4.0.3(eslint-plugin-import@2.29.1)(eslint@8.57.0)(typescript@5.4.3):
+    resolution: {integrity: sha512-APAh+7x/PXD9CoY1kjxJk6tFPhS8pUH9A+3dNpuayTZ4QdRHg5HdJ3ef5ldIFNG4rjZSlwcOVEUBdF1yNxUYeg==}
     dependencies:
-      '@anjianshi/presets-eslint-base': 3.0.0(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-typescript@3.6.1)
+      '@anjianshi/presets-eslint-base': 4.0.1(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-typescript@3.6.1)
       '@typescript-eslint/eslint-plugin': 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.4.3)
       '@typescript-eslint/parser': 6.21.0(eslint@8.57.0)(typescript@5.4.3)
       eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@6.21.0)(eslint-plugin-import@2.29.1)(eslint@8.57.0)
@@ -76,11 +76,15 @@ packages:
       prettier: 3.2.5
     dev: true
 
-  /@anjianshi/presets-typescript@3.0.0(typescript@5.4.3):
-    resolution: {integrity: sha512-sG3RsqRz7c68OkdEZZAYWYktor7XdTXvbkLjYYTnPdwiOlFOZKS3ao+8v/hWoxMh8Ife1a9T/3yEIdtPWy5Zng==}
+  /@anjianshi/presets-typescript@3.1.3(typescript@5.4.3):
+    resolution: {integrity: sha512-VprSPEcEz5YgbY2M8K/VSxHAL+c6M0g54ufxuCJNUUMLw9jnppHYd2rPMsBDtMn1xqKyn1xo9GZusL+jQWdHiw==}
+    hasBin: true
     peerDependencies:
+      tsc-alias: ^1.8.8
       typescript: ^5.4.3
     peerDependenciesMeta:
+      tsc-alias:
+        optional: true
       typescript:
         optional: true
     dependencies:
