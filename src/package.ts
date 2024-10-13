@@ -30,7 +30,7 @@ export async function getPackagesInWorkspace() {
   await execute('pnpm install') // 必须先执行一次 install 才能保证 pnpm list 的输出是基于最新的 package.json 的
   const raw = await execute('pnpm list --recursive --json')
   const packages = JSON.parse(raw) as PnpmPackageInfo[]
-  return packages
+  return packages.filter(pkg => !pkg.private)
 }
 export interface PnpmPackageInfo {
   name: string
